@@ -8,7 +8,7 @@ agent any
   }
         stage('newman') {
             steps {
-                sh 'newman run Restful_Booker_Korrigerad.postman_collection.json --environment Restful_Booker.postman_environment.json --reporters junit'
+                sh 'newman run RestfulBookerKorrigerad.postman_collection.json --environment RestfulBooker.postman_environment.json --reporters junit'
             }
             post {
                 always {
